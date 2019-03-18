@@ -841,7 +841,8 @@ foreach ($conexion->query("SELECT * from notaContables where id_carga='$id'") as
 </html>
 <script>
 	
-/*
+	
+
 	var tabla1 = document.getElementById('tabla1');
 	
 	 tabla1.addEventListener('mouseover',function(){
@@ -850,15 +851,7 @@ foreach ($conexion->query("SELECT * from notaContables where id_carga='$id'") as
   	             	<td>
 				<label>Adelanto Transportista:</label>
 				</td>
-				
-				//	
-					
-				
-				
-					
-				
-				  
-				
+				<a href="vistaNotaContable2.php?id=<?php echo $id; ?>">anadir</a>
 			
    		`;
    		  
@@ -867,27 +860,27 @@ foreach ($conexion->query("SELECT * from notaContables where id_carga='$id'") as
 	 	console.log('se salio')
 	   	tabla1.innerHTML =`
    		
-				<td>
+			<td>
 					<label>Adelanto Transportista:</label>
 				</td>
 				<td>
-					<input type="text" name="ObsAT" />
+					<input type="text"  value="<?php echo $a13 ?>" name="ObsAT" />
 					
 				</td>
 				<td>
-					<input type="number" step="any" name="haberAT" min=0 max=10000000  />
+					<input type="number" step="any"  value="<?php echo $a1 ?>" name="haberAT" min=0 max=10000000  />
 				</td>
 				<td>
-					<input type="number" step="any" name="haberAT" min=0 max=10000000  />					
+					<input type="number" step="any" value="<?php echo $a2 ?>" name="haberAT" min=0 max=10000000  />					
 				</td>
 				<td>
-					<input type="number" step="any" name="debeDolAT" min=0 max=10000000  />					
+					<input type="number" step="any" value="<?php echo $a3 ?>" name="debeDolAT" min=0 max=10000000  />					
 				</td>
 				<td>
-					<input type="number" step="any" name="haberDolAT" min=0 max=10000000  />					
+					<input type="number" step="any" value="<?php echo $a4 ?>" name="haberDolAT" min=0 max=10000000  />					
 				</td>
    		`
    		;
 	   })  
-*/
+
 </script>
